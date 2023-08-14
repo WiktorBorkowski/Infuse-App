@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TertiaryInternshipInfo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Third Level Internship"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#242424">
+
+        </TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="#242424"
+                    android:text="@string/tertiary_internship">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/third_two">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nMeet our interns"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="We were interested in finding out more about our interns working in our research wing so we interviewed a bunch and asked the other half to blog about their experience. \n">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find out what they said!"
+                    android:onClick="openTest"
+                    android:padding="10dp"
+                    android:textSize="25dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="#242424"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nAbout internships"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="As an intern at Ericsson, you’ll learn so much. You’ll learn from some of the brightest minds in our industry – in a supportive, open environment where you can ask anyone, anything, anywhere around the world. You will work on challenging projects and develop your skills in the areas you’re most passionate about. You’ll learn a lot from us and you’ll learn a lot about yourself too. About your strengths, your interests and the areas to develop as your look forward to your future career."
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nKey points"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="• Internship applicants must meet student requirements to apply\n• We recruit locally and have opportunities all over the world\n• It’s real work with real responsibilities\n• We’ll also give you structured training to build your business skills from the word ‘go'"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nCriteria"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="We recruit interns from diverse backgrounds, from various areas of study and into every area of our business, including: Computer Science, Computer Engineering, Electrical Engineering, Information Technology, Management, Information Systems, Business, Finance/Accounting, Marketing and Human Resource Management. To start, we are looking for people who are:"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="\n• Bright and articulate\n• Enthusiastic and ready to learn\n• Passionate about technology and its applications\n"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apply Now"
+                    android:onClick="openApplication"
+                    android:padding="10dp"
+                    android:textSize="25dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="#242424"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
