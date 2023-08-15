@@ -1,100 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="0dp"
-        android:background="@color/white"
-        android:id="@+id/toolbar">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center|end">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="100dp"
-                android:text="INFUSE"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#242424">
-
-            </TextView>
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:padding="5dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:src="@drawable/rounded"
-                android:onClick="openEricssonWebsite">
-
-            </ImageView>
-
-        </LinearLayout>
-
-
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/include"
-        android:layout_below="@id/toolbar"
-        app:tabTextColor="#618C8F"
-        app:tabSelectedTextColor="#242424"
-
-        app:tabIndicatorColor="#242424"
-        app:tabIndicatorHeight="4dp"
-        app:tabIndicatorFullWidth="true"
-        android:layout_marginTop="0dp"
-        android:backgroundTint="@color/white">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:id="@+id/home">
-
-        </com.google.android.material.tabs.TabItem>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="News"
-            android:id="@+id/news">
-
-        </com.google.android.material.tabs.TabItem>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Programmes"
-            android:id="@+id/programmes">
-
-        </com.google.android.material.tabs.TabItem>
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager.widget.ViewPager
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/include"
-        android:layout_marginTop="0dp"
-        android:id="@+id/frag_container">
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    </androidx.viewpager.widget.ViewPager>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Interviews With The Infuse Interns Who Made This App."
+            android:textColor="#242424"
+            android:textSize="25dp"
+            android:textStyle="bold">
 
-</RelativeLayout>
+        </TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="As a Part of their Summer Internship, a Group of Six Interns had to Make this App to Demonstrate the Work that Ericssons do to Help Develop Young Peoples' Technological Skills Through Internships. The Scrummaster of this Group was Wiktor Borkowski, an 18 Year Old who just Finished the Leaving Cert and Hopes to Study Computer and Electronic Engineering in Galway. We Asked him About his Experience in the Infuse Programme."
+                    android:textSize="30dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="During my tech internship, I find myself immersed in a dynamic world of innovation and problem-solving. Each day presents exciting challenges that fuel my passion for technology and its limitless potential. From collaborating with experienced professionals to tackling real-world projects, I am gaining invaluable hands-on experience in areas ranging from coding and debugging to system analysis and design. The thrill of unraveling complex issues and contributing to meaningful solutions keeps me motivated and engaged. This internship not only offers me a chance to apply my classroom knowledge but also exposes me to cutting-edge trends that drive the industry forward. I thoroughly enjoy the journey of continuous learning and growth in the tech field, and I am eager to harness this experience for my future endeavors."
+                    android:textSize="25dp">
+
+
+
+
+                </TextView>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
