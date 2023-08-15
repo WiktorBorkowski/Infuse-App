@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public interface ApiInterface {
+public interface ApiInterface{
 
     String BASE_URL = "https://newsapi.org/v2/";
     String HARD_URL = "everything?q=ericsson&sortBy=popularity&apiKey=c6ab9f0172164417ac9b5c0aaa524e2a";

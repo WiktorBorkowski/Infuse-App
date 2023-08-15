@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.infuseapp.R;
+
 public class ApplicationPage extends AppCompatActivity {
 
     private EditText nEditTextTo;

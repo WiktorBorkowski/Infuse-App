@@ -9,6 +9,8 @@ import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.example.infuseapp.R;
+
 public class webView extends AppCompatActivity {
 
     Toolbar toolbar;
