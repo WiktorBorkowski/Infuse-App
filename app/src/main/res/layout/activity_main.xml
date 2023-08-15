@@ -1,100 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="0dp"
-        android:background="@color/white"
-        android:id="@+id/toolbar">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center|end">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="100dp"
-                android:text="INFUSE"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#242424">
-
-            </TextView>
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:padding="5dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:src="@drawable/rounded"
-                android:onClick="openEricssonWebsite">
-
-            </ImageView>
-
-        </LinearLayout>
-
-
-
-    </androidx.appcompat.widget.Toolbar>
-
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/include"
-        android:layout_below="@id/toolbar"
-        app:tabTextColor="#618C8F"
-        app:tabSelectedTextColor="#242424"
-
-        app:tabIndicatorColor="#242424"
-        app:tabIndicatorHeight="4dp"
-        app:tabIndicatorFullWidth="true"
-        android:layout_marginTop="0dp"
-        android:backgroundTint="@color/white">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:id="@+id/home">
-
-        </com.google.android.material.tabs.TabItem>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="News"
-            android:id="@+id/news">
-
-        </com.google.android.material.tabs.TabItem>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Programmes"
-            android:id="@+id/programmes">
-
-        </com.google.android.material.tabs.TabItem>
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager.widget.ViewPager
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/include"
-        android:layout_marginTop="0dp"
-        android:id="@+id/frag_container">
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Ericsson Bursary"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#242424">
 
-    </androidx.viewpager.widget.ViewPager>
+        </TextView>
 
-</RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="Supporting Future Software Engineers">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nWhat is the Ericsson Bursary?"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="The Ericsson bursary is awarded to local second level students based on their Leaving
+Certificate results. The student must be pursuing a computer science related degree at
+3
+rd level. The recipient is awarded a cash sum each year of their course along with
+placement opportunities during the college summer holidays. The program has been
+successful in giving these students a view of the software engineering industry and is a
+valuable pipeline for Ericsson offering permanent employment for successful
+completion of their internship and college degree\n">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#242424"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Imagine Possible with the Ericsson Bursary"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="375dp"
+                    android:layout_height="255dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\nLooking to the Future"
+                    android:textSize="30dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="25dp"
+                    android:text="In the future, the bursary aims to expand to schools who will be offering computer
+science as a Leaving Certificate subject in the midlands, as of now the bursary is open
+to students in the Athlone area who achieve specific grades in Leaving Certificate
+mathematics and pursing a software related course at 3rd level. The latter requirement
+will remain but when computer science begins as a Leaving Certificate subject
+Ericsson are hopeful that more people will begin pursuing software related 3rd level
+courses and the bursary will act as an added incentive."
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/eligible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Are You Eligible?"
+                    android:textSize="25sp"
+                    android:layout_margin="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text=" Are you interested in studying a computer science related course at third level?"
+                    />
+
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkbox1"
+                    android:layout_margin="10dp"
+                    android:text=" Do you attend secondary school in the Athlone area?" />
+
+
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checkbox2"
+                    android:layout_margin="10dp"
+                    android:text=" Are you a H1/H2 higher level maths student? "
+
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="87dp" />
+
+
+                <Button
+                    android:id="@+id/apply"
+                    android:layout_width="127dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:onClick="apply"
+                    android:text="Apply Now" />
+
+                <Button
+                    android:id="@+id/loginbtn"
+                    android:layout_width="127dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+
+                    android:onClick="log"
+
+                    android:text="Login"
+
+                    app:backgroundTint="@color/black" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

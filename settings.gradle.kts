@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Home Page"
+rootProject.name = "Infuse App"
 include(":app")
  

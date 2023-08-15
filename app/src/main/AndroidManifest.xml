@@ -12,28 +12,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HomePage"
+        android:theme="@style/Theme.InfuseApp"
         tools:targetApi="31">
         <activity
-            android:name=".ApplicationPage"
+            android:name=".Signin"
             android:exported="false" />
         <activity
-            android:name=".TestimonialInfo"
+            android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".BursaryInfo"
+            android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".PrimaryInternshipInfo"
+            android:name=".splashscreen"
             android:exported="false" />
         <activity
-            android:name=".TertiaryInternshipInfo"
-            android:exported="false" />
-        <activity
-            android:name=".SecondaryIntershipInfo"
-            android:exported="false" />
-        <activity
-            android:name=".webView"
+            android:name=".applyActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
