@@ -14,7 +14,9 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
+
+//import com.bumptech.glide.Glide;
+import com.example.infuseapp.R;
 
 import org.w3c.dom.Text;
 
@@ -53,7 +55,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.mauthor.setText(modelClassArrayList.get(position).getAuthor());
         holder.mheading.setText(modelClassArrayList.get(position).getTitle());
         holder.mcontent.setText(modelClassArrayList.get(position).getDesc());
-        Glide.with(context).load(modelClassArrayList.get(position).getUrlToImage()).into(holder.imageView);
+        //Glide.with(context).load(modelClassArrayList.get(position).getUrlToImage()).into(holder.imageView);
     }
 
     @Override

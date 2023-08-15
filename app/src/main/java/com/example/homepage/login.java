@@ -1,4 +1,4 @@
-package com.example.infuseapp;
+package com.example.homepage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.infuseapp.R;
 import com.google.android.material.button.MaterialButton;
 
 public class login extends AppCompatActivity {

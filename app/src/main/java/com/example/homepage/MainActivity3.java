@@ -1,4 +1,4 @@
-package com.example.infuseapp;
+package com.example.homepage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.infuseapp.R;
+
+public class MainActivity3 extends AppCompatActivity {
     private CheckBox checkbox1, checkbox2, checkbox3;
     private Button submitButton;
 
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to switch to ApplyActivity
-                Intent intent = new Intent(MainActivity.this, applyActivity.class);
+                Intent intent = new Intent(MainActivity3.this, applyActivity.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to switch to LoginActivity
-                Intent intent = new Intent(MainActivity.this, login.class);
+                Intent intent = new Intent(MainActivity3.this, login.class);
                 startActivity(intent);
             }
         });

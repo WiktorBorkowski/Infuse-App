@@ -110,7 +110,7 @@
                         android:textSize="13sp"
                         android:id="@+id/author2"
                         android:textStyle="italic"
-                        android:textColor="@color/purple_700"
+                        android:textColor="#242424"
                         android:padding="5dp">
 
                     </TextView>
@@ -121,7 +121,7 @@
                         android:layout_weight="1"
                         android:id="@+id/time3"
                         android:padding="5dp"
-                        android:textColor="@color/purple_700"
+                        android:textColor="#242424"
                         android:text="ERICSSON"
                         android:textSize="12sp"
                         android:textStyle="bold">

@@ -18,19 +18,19 @@
             android:name=".Signin"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name="com.example.homepage.MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name="com.example.homepage.login"
             android:exported="false" />
         <activity
             android:name=".splashscreen"
             android:exported="false" />
         <activity
-            android:name=".applyActivity"
+            android:name="com.example.homepage.applyActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.homepage.MainActivity3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
