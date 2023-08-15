@@ -15,23 +15,9 @@
         android:theme="@style/Theme.InfuseApp"
         tools:targetApi="31">
         <activity
-            android:name=".Signin"
-            android:exported="false" />
-        <activity
-            android:name="com.example.homepage.MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name="com.example.homepage.login"
-            android:exported="false" />
-        <activity
-            android:name=".splashscreen"
-            android:exported="false" />
-        <activity
-            android:name="com.example.homepage.applyActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.homepage.MainActivity3"
-            android:exported="true">
+            android:name="com.example.homepage.MainActivity"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
